@@ -134,6 +134,7 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+EMAIL_TIMEOUT = 20
 
 # For development (prints emails in terminal instead of sending)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
