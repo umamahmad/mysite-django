@@ -102,7 +102,7 @@ class PostListView(ListView):
     
     """Alternative post list view"""
 
-    queryset = Post.objects.all()
+    queryset = Post.objects.filter(status = 'PB')
     context_object_name = 'posts'
     paginate_by = 3
     template_name = 'blog/post/list.html'
