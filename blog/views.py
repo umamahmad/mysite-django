@@ -99,9 +99,9 @@ from django.core.mail import send_mail
     )"""
     
 class PostListView(ListView):
-    """
-    Alternative post list view
-    """
+    
+    """Alternative post list view"""
+
     queryset = Post.objects.all()
     context_object_name = 'posts'
     paginate_by = 3
