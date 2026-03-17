@@ -1,15 +1,233 @@
+<style>
+/* Modern Pagination Styles */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.step-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pagination a,
+.pagination span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: #667eea;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pagination a:hover {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.pagination .current {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    font-weight: 700;
+}
+
+.pagination .current:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Enhanced pagination with page numbers */
+.page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0 20px;
+}
+
+.page-numbers a,
+.page-numbers span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.page-numbers a {
+    color: #667eea;
+    background: rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.page-numbers a:hover {
+    background: #667eea;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.page-numbers .current {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    font-weight: 700;
+}
+
+.page-numbers .current:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation arrows */
+.nav-arrow {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-arrow.prev::before {
+    content: "← ";
+}
+
+.nav-arrow.next::after {
+    content: " →";
+}
+
+/* Info text */
+.page-info {
+    color: #666;
+    font-size: 14px;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .step-links {
+        padding: 12px 20px;
+        gap: 6px;
+    }
+
+    .pagination a,
+    .pagination span {
+        min-width: 35px;
+        height: 35px;
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .page-numbers {
+        margin: 0 10px;
+        gap: 2px;
+    }
+
+    .page-numbers a,
+    .page-numbers span {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .page-info {
+        font-size: 12px;
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 15px;
+    }
+
+    .page-numbers {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0 0 0;
+        flex-wrap: wrap;
+    }
+
+    .page-info {
+        order: 2;
+        margin: 10px 0 0 0;
+    }
+}
+
+/* Loading state */
+.pagination.loading a {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* Accessibility */
+.pagination a:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .pagination {
+        display: none;
+    }
+}
+</style>
+
 <div class="pagination">
-    <span class="step-links">
+    <div class="step-links">
         {% if page.has_previous %}
-            <a href="?page={{ page.previous_page_number }}">Previous</a>
+            <a href="?page={{ page.previous_page_number }}" class="nav-arrow prev" aria-label="Previous page">Previous</a>
         {% endif %}
 
-        <span class="current">
+        {% if page.paginator.num_pages > 1 %}
+            <div class="page-numbers">
+                {% for num in page.paginator.page_range %}
+                    {% if page.number == num %}
+                        <span class="current" aria-current="page">{{ num }}</span>
+                    {% elif num == page.number|add:-1 or num == page.number|add:1 %}
+                        <a href="?page={{ num }}" aria-label="Page {{ num }}">{{ num }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <span class="page-info" aria-live="polite">
             Page {{ page.number }} of {{ page.paginator.num_pages }}
         </span>
 
         {% if page.has_next %}
-            <a href="?page={{ page.next_page_number }}">Next</a>
+            <a href="?page={{ page.next_page_number }}" class="nav-arrow next" aria-label="Next page">Next</a>
         {% endif %}
-    </span>
+    </div>
 </div>

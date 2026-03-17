@@ -5,12 +5,308 @@
 {% endblock %}
 
 {% block content %}
+<style>
+/* Modern Comment Page Styles */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sidebar {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 250px;
+}
+
+#sidebar h2 {
+    color: #667eea;
+    margin-top: 0;
+}
+
+/* Success Message */
+.comment-success {
+    text-align: center;
+    padding: 60px 40px;
+    background: linear-gradient(45deg, #56ab2f, #a8e6cf);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(86, 171, 47, 0.3);
+    margin: 40px 0;
+}
+
+.comment-success h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.comment-success p {
+    font-size: 1.2em;
+    margin: 0 0 30px 0;
+    opacity: 0.9;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 15px 35px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.back-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Comment Form Section */
+.comment-form-container {
+    margin: 40px 0;
+}
+
+.comment-form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form-section {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.comment-form-title-small {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.comment-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group p {
+    margin: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    transform: translateY(-1px);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active {
+    transform: translateY(-1px);
+}
+
+/* Form Validation */
+.errorlist {
+    color: #dc3545;
+    font-size: 0.9em;
+    margin-top: 5px;
+    padding: 0;
+    list-style: none;
+}
+
+.errorlist li {
+    margin-bottom: 5px;
+}
+
+.form-group .error {
+    border-color: #dc3545;
+}
+
+.form-group .error:focus {
+    box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.1);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.btn:disabled {
+    animation: pulse 1.5s infinite;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #sidebar {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        max-width: none;
+    }
+
+    .comment-success {
+        margin: 20px;
+        padding: 40px 20px;
+    }
+
+    .comment-success h2 {
+        font-size: 2em;
+    }
+
+    .comment-form-section {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .comment-form-title,
+    .comment-form-title-small {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .comment-success h2 {
+        font-size: 1.8em;
+    }
+
+    .comment-form-title,
+    .comment-form-title-small {
+        font-size: 1.5em;
+    }
+
+    .comment-form-section {
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+}
+</style>
+
     {% if comment %}
-        <h2>Your comment has been added.</h2>
-        <p>
-            <a href="{{ post.get_absolute_url }}">Back to the post</a>
-        </p>
+        <div class="comment-success">
+            <h2>Your comment has been added!</h2>
+            <p>Thank you for sharing your thoughts.</p>
+            <a href="{{ post.get_absolute_url }}" class="back-link">Back to the post</a>
+        </div>
     {% else %}
-        {% include "blog/post/includes/comment_form.html" %}
+        <div class="comment-form-container">
+            <h1 class="comment-form-title">Add a Comment</h1>
+            <div class="comment-form-section">
+                {% include "blog/post/includes/comment_form.html" %}
+            </div>
+        </div>
     {% endif %}
+
 {% endblock %}
