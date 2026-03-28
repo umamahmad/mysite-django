@@ -139,6 +139,54 @@ body {
     color: white;
 }
 
+/* Similar Posts */
+.similar-posts {
+    margin: 40px 0;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.similar-posts h2 {
+    margin: 0 0 18px;
+    font-size: 1.5em;
+    color: #333;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.similar-posts p {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.similar-posts a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 6px 18px rgba(102, 126, 234, 0.25);
+}
+
+.similar-posts a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(102, 126, 234, 0.3);
+    opacity: 0.95;
+}
+
+.similar-posts p.no-similar {
+    margin: 0;
+    color: #555;
+    font-size: 1em;
+}
+
 /* Comments Section */
 .comments-section {
     margin-top: 50px;
@@ -382,6 +430,17 @@ body {
                 Share this post
             </a>
         </div>
+
+        <section class="similar-posts">
+            <h2>Similar posts</h2>
+            {% for post in similar_posts %}
+                <p>
+                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                </p>
+            {% empty %}
+                <p>There are no similar posts yet.</p>
+            {% endfor %}
+        </section>
     </article>
 
     <section class="comments-section">
