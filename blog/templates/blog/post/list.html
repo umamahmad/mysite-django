@@ -226,6 +226,9 @@ body {
                 </div>
                 <div class="post-content">
                     {{ post.body|truncatewords:30|linebreaks }}
+                    {% if post.tags.all %}
+                        <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
+                    {% endif %}
                 </div>
             </article>
         {% endfor %}

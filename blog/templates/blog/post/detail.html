@@ -101,6 +101,13 @@ body {
     color: #333;
 }
 
+.tags {
+    margin-top: 10px;
+    color: #555;
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
 /* Share Section */
 .share-section {
     text-align: center;
@@ -361,6 +368,9 @@ body {
             <div class="post-meta">
                 Published {{ post.publish }} by {{ post.author }}
             </div>
+            {% if post.tags.all %}
+                <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
+            {% endif %}
         </header>
 
         <div class="post-content">
