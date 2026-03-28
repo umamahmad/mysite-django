@@ -9,6 +9,7 @@ from django.views.generic import ListView
 from django.core.mail import send_mail
 from django.views.decorators.http import require_POST
 from .forms import EmailPostForm, CommentForm
+from taggit.models import Tag
 
 
 
@@ -78,11 +79,17 @@ from .forms import EmailPostForm, CommentForm
     
     
     
-"""def post_list(request):
+def post_list(request, tag_slug=None):
+    
     posts = Post.objects.all()
     
     post_list = Post.objects.filter()
-    paginator = Paginator(post_list, 3)
+    tag = None
+    if tag_slug:
+        tag = get_object_or_404(Tag, slug = tag_slug)
+        post_list = post_list.filter(tags__in=[tag])
+
+    paginator = Paginator(post_list, 4)
     page_number = request.GET.get('page', 1)
     
     try:
@@ -97,17 +104,22 @@ from .forms import EmailPostForm, CommentForm
     return render (
         request,
         'blog/post/list.html',
-        {'posts': posts}
-    )"""
+        {
+            'posts': posts,
+            'page_obj': posts,
+            'tag': tag
+            }
+    )
     
-class PostListView(ListView):
+"""class PostListView(ListView):
     
-    """Alternative post list view"""
+    Alternative post list view
 
     queryset = Post.objects.filter(status = 'PB')
     context_object_name = 'posts'
     paginate_by = 4
     template_name = 'blog/post/list.html'
+"""
     
     
     

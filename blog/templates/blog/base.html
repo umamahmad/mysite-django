@@ -411,6 +411,9 @@ body {
         <aside class="sidebar">
             <div class="sidebar-content">
                 <h2 class="sidebar-title">My Blog</h2>
+                {% if tag %}
+                    <h2>Posts tagged with "{{ tag.name }}"</h2>
+                {% endif %}
                 <p class="sidebar-description">Welcome to my personal blog where I share thoughts, ideas, and experiences about technology, development, and life.</p>
 
                 <div class="sidebar-widget">
