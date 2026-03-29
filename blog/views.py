@@ -148,6 +148,8 @@ def post_detail(request, year, month, day, post):
         same_tags=Count('tags')
         ).order_by('-same_tags', '-publish')[:4]
 
+    total_posts = Post.objects.filter(status=Post.Status.PUBLISHED).count()
+
     return render(
         request,
         'blog/post/detail.html',
@@ -155,7 +157,8 @@ def post_detail(request, year, month, day, post):
             'post': post,
             'comments': comments,
             'form': form,
-            'similar_posts': similar_posts 
+            'similar_posts': similar_posts,
+            'total_posts': total_posts
         }
     )
     
