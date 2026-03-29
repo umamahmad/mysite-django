@@ -438,6 +438,22 @@ body {
                         {% show_latest_posts 3 %}
                     </div>
                 </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Most commented posts</h3>
+                    <div class="widget-content">
+                        {% get_most_commented_posts 3 as most_commented_posts %}
+                        <ul>
+                            {% for post in most_commented_posts %}
+                                <li>
+                                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                                </li>
+                            {% empty %}
+                                <li>No commented posts yet.</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </aside>
     </main>
