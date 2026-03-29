@@ -1,4 +1,5 @@
 {% extends "blog/base.html" %}
+{% load blog_tags %}
 
 {% block title %}
     My Blog
@@ -225,7 +226,7 @@ body {
                     </div>
                 </div>
                 <div class="post-content">
-                    {{ post.body|truncatewords:30|linebreaks }}
+                    {{ post.body|markdown|truncatewords_html:30 }}
                     {% if post.tags.all %}
                         <p class="tags">Tags:
                             {% for tag in post.tags.all %}
