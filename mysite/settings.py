@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'taggit',
     'blog.apps.BlogConfig',
@@ -139,3 +141,6 @@ EMAIL_TIMEOUT = 20 #Added this to avoid the tls error
 
 # For development (prints emails in terminal instead of sending)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+#Adding a sitemap to the site
+SITE_ID = 1
