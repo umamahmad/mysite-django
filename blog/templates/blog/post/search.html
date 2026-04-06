@@ -1,0 +1,146 @@
+{% extends "blog/base.html" %}
+{% load blog_tags %}
+
+{% block title %}
+Search
+{% endblock %}
+
+{% block content %}
+<style>
+  .search-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  .search-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  .search-results-info {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .search-results-info h3 {
+    color: #555;
+    margin: 0;
+  }
+  
+  .post-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .post-item h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .post-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .post-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .post-body {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .no-results {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    padding: 15px;
+    border-radius: 5px;
+    color: #856404;
+  }
+  
+  .search-again {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .search-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .search-form input[type="text"],
+  .search-form input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .search-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<div class="search-container">
+  {% if query %}
+    <h1>Posts containing "{{ query }}"</h1>
+
+    {% with results.count as total_results %}
+      <div class="search-results-info">
+        <h3>Found {{ total_results }} result{{ total_results|pluralize }}</h3>
+      </div>
+    {% endwith %}
+
+    {% for post in results %}
+      <div class="post-item">
+        <h4>
+          <a href="{{ post.get_absolute_url }}">
+            {{ post.title }}
+          </a>
+        </h4>
+        <div class="post-body">
+          {{ post.body|markdown|truncatewords_html:12 }}
+        </div>
+      </div>
+    {% empty %}
+      <p class="no-results">There are no results for your query.</p>
+    {% endfor %}
+
+    <p class="search-again">
+      <a href="{% url "blog:post_search" %}">Search again</a>
+    </p>
+
+  {% else %}
+
+    <h1>Search for posts</h1>
+
+    <form method="get" class="search-form">
+      {{ form.as_p }}
+      <input type="submit" value="Search">
+    </form>
+
+  {% endif %}
+</div>
+
+{% endblock %}
