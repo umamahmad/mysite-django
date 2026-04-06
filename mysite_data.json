@@ -1,0 +1,1264 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-02-23T10:02:36.108Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "THIS IS MY NEW CAR",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-02-23T10:06:00.684Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "THIS IS MY NEW BIKE",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-02-23T10:06:51.737Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "THIS IS MY NEW LAPTOP",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-02-24T11:30:55.643Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "New title",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-03-10T11:20:48.420Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "THIS IS MY NEW CAR",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-03-10T11:27:26.221Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "THIS IS MY NEW BAG",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-03-10T11:27:29.835Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "THIS IS MY NEW PHONE",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-03-10T11:27:33.609Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "THIS IS MY NEW LAPTOP",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-03-10T11:27:38.312Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "THIS IS MY NEW BIKE",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-03-10T11:38:12.170Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Why I Like Python",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-03-10T11:38:29.068Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Learning Django Step by Step",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-03-10T11:39:49.721Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "user2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-03-16T10:18:03.159Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Test Product",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-03-17T11:03:18.796Z",
+    "user": 2,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "comment by Umam Ahmad on THIS IS MY NEW BAG",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-03-18T08:55:09.337Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Test Product",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-03-28T14:10:42.671Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "THIS IS MY NEW CAR",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-03-28T16:42:08.428Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Hi This Is my New Post",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-03-28T16:42:17.336Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Hi This Is my New Post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-03-28T16:56:13.753Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "THIS IS MY NEW BAG",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-03-29T16:08:23.036Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Markdown Posr",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-03-29T16:08:40.165Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Markdown Post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-03-30T07:23:21.790Z",
+    "user": 2,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "localhost:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 11,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 11,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 11,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 11,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$r8VbEk21ZAPiAp1yKaNT0j$/HkcB8f1szkFQ/eKATFoYT8k3xxBOT3/NohdXYKLuCw=",
+    "last_login": "2026-03-28T16:10:15.878Z",
+    "is_superuser": true,
+    "username": "umamahmad66",
+    "first_name": "",
+    "last_name": "",
+    "email": "umamahmad2006@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-23T09:53:49.260Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$TJLnRO2tTvetktwNgo6qRT$HieIca8YZpNWZ3EA/exwUGzJ5PBwP9m3oxpsQdV6ecA=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "cocomelon56",
+    "first_name": "",
+    "last_name": "",
+    "email": "cocomelon67@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-23T10:03:35.798Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$rQSqkPYXsvRpXKKtayna0E$6f4M8PPZSeWcELm7ySUsHnPq+nq2Gy5Zk0f1m2KYKvs=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "blackhat23",
+    "first_name": "",
+    "last_name": "",
+    "email": "blacki34@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-23T10:03:59.238Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "user2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-23T11:15:52Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1nyo1b7uggmi65zepewxdlnno40x3ene",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnxrj8JJX3OYO3aGxxAiRQnFeLuyFIKaN_MvLeKdOwlHlW2OGd1VaAuvxtTesrSQH7Qcl91Wpd9m1k3RZ-06nHN8rqd7t9BoVpa7XvsWDwxekIAjyaBZcEpy2R8SgM4SMZyDxKcs2wxCw4deaYQBlKfL-ZuN_M:1w1ei7:hamo2GkV7xpJQLfRK93LmpLkJjaYr3ckstIU_IyxbVA",
+    "expire_date": "2026-03-29T06:12:23.225Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8x6s1mceh8jqwsnqprknjzd4dpp3a4fc",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnxrj8JJX3OYO3aGxxAiRQnFeLuyFIKaN_MvLeKdOwlHlW2OGd1VaAuvxtTesrSQH7Qcl91Wpd9m1k3RZ-06nHN8rqd7t9BoVpa7XvsWDwxekIAjyaBZcEpy2R8SgM4SMZyDxKcs2wxCw4deaYQBlKfL-ZuN_M:1w6WEp:iia35ACR_Yt0uWINTKXjNqGbL5P653G_tvXJR4CcBEI",
+    "expire_date": "2026-04-11T16:10:15.883Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "exctf0ipiezfdtnavy1f7tkz44mj0u39",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAURO_C2hCoBMSle89ABv5HqgaS0q4a726bdKGrSea9mVUELHMJS-cpjCSuQovTbxeRXlx3QE_UR5Op1Xkao9wVedAu7434fTvcv4OCXrZ1sgSvNJHP1vsMx0azAc7w-pKsUTFzclCsIkVFbgvDbnAWZsiZSHy-D2U5Sg:1voedk:-bunBE2nWJ99poR2feZ6e8XuD6IqXNsp9BVtV46T2KY",
+    "expire_date": "2026-02-21T09:30:08.183Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ic8naq65kapo4e9r43xn00tdqen0ckyt",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnexD9R0nMGa9e7xgFkS_lUiLtDpBTQvpl5L5VwW2vaFpnTxOqsBnX63QjzQ9oO-I7t1nXubZ0n0ruiD7roa2d5Xg7376DiUr81gKC4iIYKj3EEx-DAGciefCATfBFnDXEYRu-J44BsEQpZ8MbFIur9AdwlN7k:1vypWK:z8I5ydcEW151Ai5sGDBK0mXfK0lmiLN5iwzBna784EE",
+    "expire_date": "2026-03-21T11:08:32.575Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "n16cpp2890zglk6n90lpg9htbaz7x5n9",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnxrj8JJX3OYO3aGxxAiRQnFeLuyFIKaN_MvLeKdOwlHlW2OGd1VaAuvxtTesrSQH7Qcl91Wpd9m1k3RZ-06nHN8rqd7t9BoVpa7XvsWDwxekIAjyaBZcEpy2R8SgM4SMZyDxKcs2wxCw4deaYQBlKfL-ZuN_M:1w6UDR:Jw9meBEEIl7T_6PU_2c2tpy_NIGMG6456cgxniAUJtM",
+    "expire_date": "2026-04-11T14:00:41.081Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pazi4pb5jyg99eu9ek9csxy8e0pfuogb",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAURO_C2hCoBMSle89ABv5HqgaS0q4a726bdKGrSea9mVUELHMJS-cpjCSuQovTbxeRXlx3QE_UR5Op1Xkao9wVedAu7434fTvcv4OCXrZ1sgSvNJHP1vsMx0azAc7w-pKsUTFzclCsIkVFbgvDbnAWZsiZSHy-D2U5Sg:1vtjc4:jFi_RqBK-lD8hKI3jEUKBvMfSjVKMOAMkON1oWGyBDo",
+    "expire_date": "2026-03-07T09:49:24.726Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "u4jbuodxfe9ovjjzjcd3pfscsmnuy0jj",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAURO_C2hCoBMSle89ABv5HqgaS0q4a726bdKGrSea9mVUELHMJS-cpjCSuQovTbxeRXlx3QE_UR5Op1Xkao9wVedAu7434fTvcv4OCXrZ1sgSvNJHP1vsMx0azAc7w-pKsUTFzclCsIkVFbgvDbnAWZsiZSHy-D2U5Sg:1vuSUt:yRBbYpb0O1TOeqExQwTYiv5L2b-4A5G71oqtzMw5OmQ",
+    "expire_date": "2026-03-09T09:44:59.348Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wrb9t4h29snqmq72j13dpobajcqe981f",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnexD9R0nMGa9e7xgFkS_lUiLtDpBTQvpl5L5VwW2vaFpnTxOqsBnX63QjzQ9oO-I7t1nXubZ0n0ruiD7roa2d5Xg7376DiUr81gKC4iIYKj3EEx-DAGciefCATfBFnDXEYRu-J44BsEQpZ8MbFIur9AdwlN7k:1vuSoQ:O6JQLpUvAAu-j1E_YOkgJ1iUrrEu2reLPRxpfgzyjqI",
+    "expire_date": "2026-03-09T10:05:10.210Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "z7k0vu0msjzkkspdf6nrz2ayq94zpa70",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnexD9R0nMGa9e7xgFkS_lUiLtDpBTQvpl5L5VwW2vaFpnTxOqsBnX63QjzQ9oO-I7t1nXubZ0n0ruiD7roa2d5Xg7376DiUr81gKC4iIYKj3EEx-DAGciefCATfBFnDXEYRu-J44BsEQpZ8MbFIur9AdwlN7k:1vzv8b:r-UTrRTWFBxu7issnWvn4PDXBQaGbI8aCdruf0SoM84",
+    "expire_date": "2026-03-24T11:20:33.990Z"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "localhost:8000"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "music",
+    "slug": "music"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "jazz",
+    "slug": "jazz"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "car",
+    "slug": "car"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "nice",
+    "slug": "nice"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "life",
+    "slug": "life"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "create",
+    "slug": "create"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "new",
+    "slug": "new"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "markdown",
+    "slug": "markdown"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 6,
+    "content_type": 7,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 7,
+    "content_type": 7,
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 8,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 9,
+    "content_type": 7,
+    "object_id": 12
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "THIS IS MY NEW CAR",
+    "slug": "this-is-my-new-car",
+    "author": 2,
+    "body": "this is the mercedes gla",
+    "publish": "2026-02-23T09:56:04Z",
+    "created": "2026-02-23T10:02:36.104Z",
+    "updated": "2026-03-28T14:10:42.655Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "THIS IS MY NEW BIKE",
+    "slug": "this-is-my-new-bike",
+    "author": 3,
+    "body": "this is my new bike ktm duke 390 i got this bike last month the power is insnaneeee!!!",
+    "publish": "2026-02-23T10:05:12Z",
+    "created": "2026-02-23T10:06:00.683Z",
+    "updated": "2026-03-10T11:27:38.310Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "THIS IS MY NEW LAPTOP",
+    "slug": "this-is-my-new-laptop",
+    "author": 4,
+    "body": "today i got a new laptop asus zenbook 14 its a very powerful laptop with turbo clock of 5.2GHz",
+    "publish": "2026-02-23T10:06:02Z",
+    "created": "2026-02-23T10:06:51.736Z",
+    "updated": "2026-03-10T11:27:33.607Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "THIS IS MY NEW PHONE",
+    "slug": "this-is-my-new-phone",
+    "author": 2,
+    "body": "this is my new phone moto edge 50 neo it has a very good camera.",
+    "publish": "2026-02-23T10:54:46Z",
+    "created": "2026-02-23T10:54:52.694Z",
+    "updated": "2026-03-10T11:27:29.833Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "THIS IS MY NEW BAG",
+    "slug": "this-is-my-new-bag",
+    "author": 2,
+    "body": "this is my new bag from skybags it has a raincover and double chains.",
+    "publish": "2026-02-24T11:34:40Z",
+    "created": "2026-02-24T11:34:47.395Z",
+    "updated": "2026-03-28T16:56:13.745Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Why I Like Python",
+    "slug": "why-i-like-python",
+    "author": 3,
+    "body": "Python is one of the most popular programming languages in the world. It is simple, readable, and powerful. Developers use Python for web development, data science, artificial intelligence, and automation. Django is a web framework written in Python that helps developers build secure and scalable web applications quickly. Learning Python has opened many opportunities in the world of programming.",
+    "publish": "2026-03-10T11:37:01Z",
+    "created": "2026-03-10T11:38:12.169Z",
+    "updated": "2026-03-10T11:38:12.169Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Learning Django Step by Step",
+    "slug": "learning-django-step-by-step",
+    "author": 4,
+    "body": "Django is a high level Python web framework that encourages rapid development and clean design. It follows the Model Template View architecture which helps organize code efficiently. In this project I am creating a blog system where users can view posts, read details, and navigate through the site. Step by step I am learning about models, migrations, templates, and URL routing in Django.",
+    "publish": "2026-03-10T11:38:12Z",
+    "created": "2026-03-10T11:38:29.066Z",
+    "updated": "2026-03-10T11:38:29.066Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "Test Product",
+    "slug": "test-product",
+    "author": 2,
+    "body": "this is test post on the blogging website",
+    "publish": "2026-03-16T10:17:32Z",
+    "created": "2026-03-16T10:18:03.158Z",
+    "updated": "2026-03-18T08:55:09.336Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 11,
+  "fields": {
+    "title": "Hi This Is my New Post",
+    "slug": "hi-this-is-my-new-post",
+    "author": 3,
+    "body": "hi posting again after a long time hello everyone how its been tell me about yourself how everything is goinggggg........",
+    "publish": "2026-03-28T16:40:48Z",
+    "created": "2026-03-28T16:42:08.413Z",
+    "updated": "2026-03-28T16:42:17.333Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 12,
+  "fields": {
+    "title": "Markdown Post",
+    "slug": "markdown-posr",
+    "author": 2,
+    "body": "This is a post formatted with markdown\r\n--------------------------------------\r\n\r\n*This is emphasized* and **this is more emphasized**.\r\n\r\nHere is a list:\r\n\r\n* One\r\n* Two\r\n* Three\r\n\r\nAnd a [link to the Django website](https://www.djangoproject.com/).",
+    "publish": "2026-03-29T16:06:44Z",
+    "created": "2026-03-29T16:08:23.028Z",
+    "updated": "2026-03-29T16:08:40.162Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 7,
+    "name": "Umam Ahmad",
+    "email": "myperosnaldata.98765@gmail.com",
+    "body": "wow yar this bag of yours is very nice",
+    "created": "2026-03-17T11:03:18.795Z",
+    "updated": "2026-03-17T11:03:18.795Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 9,
+    "name": "Sohom som Panda",
+    "email": "sohomsomp@gmail.com",
+    "body": "was wonderful here i want to learn django too.",
+    "created": "2026-03-17T12:21:19.554Z",
+    "updated": "2026-03-17T12:21:19.554Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 8,
+    "name": "shashank kumar",
+    "email": "mypersonaldata.98765@gmail.com",
+    "body": "wow i wanna learn python too",
+    "created": "2026-03-18T09:57:28.525Z",
+    "updated": "2026-03-18T09:57:28.525Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 4,
+    "name": "Shoiba Hashmi",
+    "email": "shoiba@gmail.com",
+    "body": "oh wow this phone is very nice.",
+    "created": "2026-03-28T13:33:00.872Z",
+    "updated": "2026-03-28T13:33:00.872Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "post": 8,
+    "name": "yuuhu",
+    "email": "hijhid23@gmail.com",
+    "body": "hi found this post interesting",
+    "created": "2026-03-29T15:57:56.484Z",
+    "updated": "2026-03-29T15:57:56.484Z",
+    "active": true
+  }
+}
+]
