@@ -95,17 +95,19 @@ body {
     transform: translateY(-1px);
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    transition: width 0.3s ease;
-}
+    .search-button {
+        background: #667eea;
+        color: #fff;
+        padding: 0.65rem 1rem;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+    }
 
+    .search-button:hover {
+        background: #5a5fda;
+        color: #fff;
+    }
 .nav-link:hover::after {
     width: 100%;
 }
@@ -398,6 +400,7 @@ body {
                 <a href="/" class="nav-link">Home</a>
                 <a href="/about/" class="nav-link">About</a>
                 <a href="/contact/" class="nav-link">Contact</a>
+                <a href="{% url 'blog:post_search' %}" class="nav-link search-button">Search</a>
             </nav>
         </div>
     </header>
